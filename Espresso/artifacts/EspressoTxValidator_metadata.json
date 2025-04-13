@@ -1,0 +1,122 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					}
+				],
+				"name": "ActionValidated",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "txHash",
+						"type": "bytes32"
+					}
+				],
+				"name": "isConfirmedByEspresso",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "txHash",
+						"type": "bytes32"
+					}
+				],
+				"name": "performAction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"isConfirmedByEspresso(bytes32)": {
+					"details": "Simule une confirmation depuis Espresso"
+				},
+				"performAction(bytes32)": {
+					"details": "Action sécurisée : exécutée uniquement si la transaction est confirmée"
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Espresso/SM Test validation.sol": "EspressoTxValidator"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Espresso/SM Test validation.sol": {
+			"keccak256": "0x7fd4b90d9ad4c0a8e188e4f5cda4c7af36e39baf3d6e63fa99b4ffc36aa75488",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3f235ce3b6c85050637af6e432cbf9330ca93c462ead2e61f2afbfc6fcfeb10c",
+				"dweb:/ipfs/QmdNjGwT3jxWPnC3CcQNztB1Nf12ZuPnJB2E5uEkV4Aumi"
+			]
+		}
+	},
+	"version": 1
+}
